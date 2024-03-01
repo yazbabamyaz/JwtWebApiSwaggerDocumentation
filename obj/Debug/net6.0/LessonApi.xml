@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LessonApi</name>
+    </assembly>
+    <members>
+        <member name="M:LessonApi.Controllers.LessonsController.GetAll">
+            <summary>
+            Get all the lessons
+             </summary>
+             <returns> </returns>
+        </member>
+        <member name="M:LessonApi.Controllers.LessonsController.CreateLesson(LessonApi.Models.Dtos.LessonDto)">
+            <summary>
+            Create a new Lesson
+            </summary>       
+            <returns></returns>        
+        </member>
+        <member name="M:LessonApi.Controllers.LessonsController.GetLesson(System.Int32)">
+            <summary>
+            Get lesson by id
+            </summary>
+            <param name="id">id of lesson</param>
+            <returns></returns>
+            <response code="404">If not found from ID</response> 
+        </member>
+        <member name="M:LessonApi.Controllers.LessonsController.DeleteLesson(System.Int32)">
+            <summary>
+            Delete the Lesson
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LessonApi.Controllers.LessonsController.UpdateLesson(System.Int32,LessonApi.Models.Dtos.LessonDto)">
+            <summary>
+            Update lesson
+            </summary>
+            <param name="id"></param>
+            <param name="lessonDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LessonApi.Models.Jwt.CreateTokenRequest">
+            <summary>
+            Generate Token Request
+            </summary>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.CreateTokenRequest.Username">
+            <summary>Gets or sets the username.</summary>
+            <value>The username.</value>
+        </member>
+        <member name="T:LessonApi.Models.Jwt.CreateTokenResponse">
+            <summary>
+            Generate Token Response
+            </summary>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.CreateTokenResponse.Token">
+            <summary>Gets or sets the token.</summary>
+            <value>The token.</value>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.CreateTokenResponse.TokenExpireDate">
+            <summary>Gets or sets the token expire date.</summary>
+            <value>The token expire date.</value>
+        </member>
+        <member name="T:LessonApi.Models.Jwt.LoginRequest">
+            <summary>
+            User Login Request
+            </summary>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.LoginRequest.UserName">
+            <summary>Gets or sets the username.</summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.LoginRequest.Password">
+            <summary>Gets or sets the password.</summary>
+            <value>The password.</value>
+        </member>
+        <member name="T:LessonApi.Models.Jwt.LoginResponse">
+            <summary>
+            User Login Response
+            </summary>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.LoginResponse.AuthenticateResult">
+            <summary>Gets or sets a value indicating whether [authenticate result].</summary>
+            <value>
+              <c>true</c> if [authenticate result]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.LoginResponse.AuthToken">
+            <summary>Gets or sets the authentication token.</summary>
+            <value>The authentication token.</value>
+        </member>
+        <member name="P:LessonApi.Models.Jwt.LoginResponse.AccessTokenExpireDate">
+            <summary>Gets or sets the access token expire date.</summary>
+            <value>The access token expire date.</value>
+        </member>
+    </members>
+</doc>
